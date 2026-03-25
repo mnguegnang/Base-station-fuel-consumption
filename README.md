@@ -1,4 +1,4 @@
-# Diesel Generator Fuel Consumption Prediction
+# Machine Learning-Driven Fuel Optimization for Power Generation Plants
 
 **Predicting historical diesel fuel consumption of off-grid telecom generator sites using supervised machine learning (Random Forest, Gradient Boosting, MLP, Lasso).**
 
@@ -6,17 +6,8 @@
 
 ## 1. Project Description and Objectives
 
-### Background
-
-Telecom companies operating in northern Cameroon rely on diesel generators at hundreds of remote off-grid sites. Fuel costs represent one of the largest operational expenditures, yet systematic over-consumption and unexplained fuel losses (estimated at ~84 617 L across the study period) suggest measurement gaps and potential misuse. Accurate consumption forecasting enables procurement planning, anomaly detection, and accountability.
-
-### Research Objective
-
-This project addresses the following research question:
-
-> *Can operational generator parameters (running time, consumption rate, cluster, generator type and capacity) predict historical diesel fuel consumption with sufficient accuracy to support operational decision-making?*
-
-The aim is to build, tune, and evaluate multiple regression models that predict **CONSUMPTION HIS** (historical fuel consumption in litres) from a cleaned, feature-engineered representation of 11 months of field-visit records collected from ~1 600 generator sites across 19 geographic clusters in northern Cameroon.
+This project aims to optimize fuel usage and minimize fuel loss at telecom base stations located in regions with unreliable national grid access. Exploratory data analysis identifies key factors contributing to fuel inefficiency. Four supervised learning models Gradient Boosting, Random Forest, Neural Network, and Lasso are implemented to forecast fuel consumption. Among these, the Gradient Boosting model achieves the highest Nash efficiency value of 99.1%, indicating superior predictive performance.
+ The analysis reveals a potential fuel savings of approximately 84,000 liters. 
 
 ### Key Findings
 
@@ -68,8 +59,7 @@ The key version pins and their rationale are documented inside `requirements.txt
 
 ### Source
 
-The raw data is a proprietary Excel workbook provided by the telecom operator:
-
+The raw dataset consists of a proprietary Excel workbook that describes part of the routine maintenance at telecom base stations:
 ```
 Full_Data_Gen_only.xlsx   (sheet: Generator_only)
 ```
@@ -227,6 +217,4 @@ The full per-fold NSE values and all six metrics per model are written to:
 
 ## 7. License
 
-This project is licensed under the **MIT License** — see the LICENSE file for details (to be added upon public release).
-
-If you use this work in academic research, please cite the original study for which this codebase was developed.
+This project is licensed under the **MIT License** — see the LICENSE file for details.
