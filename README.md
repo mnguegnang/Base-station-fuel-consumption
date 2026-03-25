@@ -1,19 +1,16 @@
 # Machine Learning-Driven Fuel Optimization for Power Generation Plants
 
-**Predicting historical diesel fuel consumption of off-grid telecom generator sites using supervised machine learning (Random Forest, Gradient Boosting, MLP, Lasso).**
-
 ---
 
 ## 1. Project Description and Objectives
 
 This project aims to optimize fuel usage and minimize fuel loss at telecom base stations located in regions with unreliable national grid access. Exploratory data analysis identifies key factors contributing to fuel inefficiency. Four supervised learning models Gradient Boosting, Random Forest, Neural Network, and Lasso are implemented to forecast fuel consumption. Among these, the Gradient Boosting model achieves the highest Nash efficiency value of 99.1%, indicating superior predictive performance.
- The analysis reveals a potential fuel savings of approximately 84,000 liters. 
 
 ### Key Findings
 
 - **Running Time** and **Fuel per Period** are the two strongest predictors (identified via ExtraTreesRegressor feature importance).
 - **Gradient Boosting** (after hyperparameter tuning) achieves the highest Nash-Sutcliffe Efficiency (NSE = 0.992), outperforming all other models.
-- All four tuned models achieve NSE > 0.91, confirming the practical viability of the proposed approach.
+- All four tuned models achieve NSE > 0.91, confirming the practical viability of the proposed approach.The analysis reveals a potential fuel savings of approximately 84,000 liters.
 
 ---
 

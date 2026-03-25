@@ -207,11 +207,11 @@ def plot_correlation_matrix(num_df: pd.DataFrame, save: bool = True) -> None:
     """Annotated heat-map of Pearson correlations for *num_df*."""
     sns.set(font_scale=1.4)
     corr = num_df.corr()
-    plt.figure(figsize=(13, 13))
+    plt.figure(figsize=(14, 14))
     sns.heatmap(corr, vmax=1, square=True, linewidths=2, annot=True)
-    plt.title("Correlation Matrix", fontsize=25)
-    plt.xticks(fontsize=16)
-    plt.yticks(fontsize=16, rotation=0)
+    plt.title("Correlation Matrix", fontsize=22)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14, rotation=0)
     plt.tight_layout()
     if save:
         _save("correlation_matrix.png", EDA_FIGURES_DIR)
