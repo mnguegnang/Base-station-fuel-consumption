@@ -1,0 +1,40 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── Data files (large binaries – store in DVC, S3, or shared drive) ───────────
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+
+# ── Trained model artefacts ───────────────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# ── Generated figures ─────────────────────────────────────────────────────────
+reports/figures/*.png
+reports/figures/*.pdf
+reports/figures/*.svg
+
+# ── OS noise ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
